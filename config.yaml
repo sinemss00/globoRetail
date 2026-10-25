@@ -1,0 +1,19 @@
+aws:
+  s3_bucket: "globo-retail-analytics-2026"
+  raw_sales_prefix: "sales_data.csv"
+  raw_products_prefix: "product_data.json"
+  processed_prefix: "processed/processed_sales.parquet"
+  aws_region: "eu-central-1"
+
+snowflake:
+  account: "PBBHROU-RF19588"
+  user: "SINEMNEZHDET1"
+  password: "Qwerty1234567!"
+  role: "GLOBO_ANALYTICS_ROLE"
+  warehouse: "GLOBO_WH"
+  database: "GLOBO_RETAIL_DB"
+  schema_cleansed: "CLEANSED"
+
+pipeline:
+  batch_size: 10000
+  file_format: "parquet"
